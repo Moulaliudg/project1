@@ -4,16 +4,16 @@ import requests
 import time
 
 # Databricks credentials
-DATABRICKS_INSTANCE = "https://dbc-7c82be33-847c.cloud.databricks.com"
-TOKEN = "dapi971adb4aab9fff1b477651ac822c06fc"
-JOB_ID = "45166209390535"
+DATABRICKS_INSTANCE = "https://dbc-59c4dbe0-932d.cloud.databricks.com"
+TOKEN = "dapi6aa0030fa75d3836483a8684c24219e8"
+JOB_ID = "419946134308881"
 
 st.title("START VALIDATION")
 
 # User inputs
-param1 = st.text_input("STM file path:")
-param2 = st.text_input("Source file path:")
-param3 = st.text_input("Output Path:")
+param1 = st.text_input("STM_FILE:")
+#param2 = st.text_input("Source file path:")
+param3 = st.text_input("OUTPUT:")
 
 if st.button("Run Notebook"):
     st.write("Triggering Databricks job...")
@@ -22,7 +22,7 @@ if st.button("Run Notebook"):
         "job_id": JOB_ID,
         "notebook_params": {
             "STM_FILE_PATH": param1,
-            "SOURCE_FILE_PATH": param2,
+            #"SOURCE_FILE_PATH": param2,
             "OUTPUT_FILE_PATH": param3
         }
     }
