@@ -12,8 +12,11 @@ st.title("START VALIDATION")
 
 # User inputs
 param1 = st.text_input("STM_FILE:")
-#param2 = st.text_input("Source file path:")
-param3 = st.text_input("OUTPUT:")
+param2 = st.text_input("OUTPUT:")
+param3 = st.text_input("SOURCE_TABLE:")
+param4 = st.text_input("TARGET_TABLE:")
+param5 = st.text_input("PRIMARY_KEYS:")
+param6 = st.text_input("SCD_TYPE:")
 
 if st.button("Run Notebook"):
     st.write("Triggering Databricks job...")
@@ -22,8 +25,11 @@ if st.button("Run Notebook"):
         "job_id": JOB_ID,
         "notebook_params": {
             "STM_FILE": param1,
-            #"SOURCE_FILE_PATH": param2,
-            "OUTPUT": param3
+            "OUTPUT": param2,
+            "SOURCE_TABLE": param3,
+            "TARGET_TABLE": param4,
+            "PRIMARY_KEYS": param5,
+            "SCD_TYPE": param6
         }
     }
 
