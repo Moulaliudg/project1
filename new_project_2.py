@@ -24,7 +24,7 @@ if st.button("Run Notebook"):
         "notebook_params": {
             "SOURCE_TABLE": param1,
             "TARGET_TABLE": param2,
-            "PRIMARY_KEYS": param3
+            "PRIMARY_KEYS": param3,
             "SCD_TYPE": param4
         }
     }
