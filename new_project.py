@@ -48,7 +48,7 @@ if st.button("Run Notebook"):
                     # Poll job status
                     while True:
                         status_resp = requests.get(
-                            f"{DATABRICKS_INSTANCE}/api/2.1/jobs/runs/get?run_id={run_id}",
+                            f"{DATABRICKS_INSTANCE}/api/2.2/jobs/runs/get?run_id={run_id}",
                             headers=headers
                         )
 
