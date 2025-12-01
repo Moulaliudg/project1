@@ -6,7 +6,7 @@ import time
 # Databricks credentials
 DATABRICKS_INSTANCE = "https://dbc-59c4dbe0-932d.cloud.databricks.com"
 TOKEN = "dapi6aa0030fa75d3836483a8684c24219e8"
-JOB_ID = "419946134308881"
+JOB_ID = "1069016103319305"
 
 st.title("START VALIDATION")
 
